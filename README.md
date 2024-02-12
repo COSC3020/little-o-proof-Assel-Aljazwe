@@ -17,3 +17,7 @@ page](https://docs.github.com/en/get-started/writing-on-github/working-with-adva
 might help with the notation for mathematical expressions.
 
 $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
+
+## Proof:
+$f(n) = o(g(n))$ - This means that for any positive constant $c > 0$, there exists an $n<sub>0</sub>$ such that for all $n >= n<sub>0</sub>$, $f(n) < c * g(n)$. <br />
+$f(n) = O(g(n))$ - This means that we have to find some constant $c' > 0$ and some $n<sub>0</sub>$' such that for all n >= n<sub>0</sub>', $f(n) <= c' * g(n)$.
