@@ -19,10 +19,10 @@ might help with the notation for mathematical expressions.
 $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
 
 ## Proof:
-$f(n) = o(g(n))$ - This means that for any positive constant $c > 0$, there exists an n<sub>0</sub> such that for all n ≥ n<sub>0</sub>, $f(n) < c * g(n)$. <br />
-$f(n) = O(g(n))$ - This means that there exists some constant $C > 0$ and some n<sub>0</sub>' such that for all n ≥ n<sub>0</sub>', $f(n) ≤ C * g(n)$.
+$f(n) ∈ o(g(n))$ - This means that for any positive constant $c > 0$, there exists an n<sub>0</sub> such that for all n ≥ n<sub>0</sub>, $f(n) < c * g(n)$. <br />
+$f(n) ∈ O(g(n))$ - This means that there exists some constant $C > 0$ and some n<sub>0</sub>' such that for all n ≥ n<sub>0</sub>', $f(n) ≤ C * g(n)$.
 
-Given $f(n) = o(g(n))$, by definition for all $c > 0$, there exists n<sub>0</sub> such that for all n ≥ n<sub>0</sub>, we have $f(n) < c * g(n)$.
+Given $f(n) ∈ o(g(n))$, by definition for all $c > 0$, there exists n<sub>0</sub> such that for all n ≥ n<sub>0</sub>, we have $f(n) < c * g(n)$.
 
 Choosing any $c > 0$, say $c = 1$. Then there exists n<sub>0</sub> (since $f(n) ∈ o(g(n)$ ) such that for all n ≥ n<sub>0</sub>, $f(n) < g(n)$.
 
@@ -30,5 +30,5 @@ This directly gives us that $f(n) ≤ g(n)$ for all n ≥ n<sub>0</sub> because 
 
 Therefore, we can set $C = 1$ and  the same n<sub>0</sub> from our little-o definition to satisfy the big-O definition
 
-Hence, showing that if $f(n) = o(g(n))$, then $f(n) = O(g(n))$, with $C = 1$ and the  n<sub>0</sub> given by the definition of little-o.
+Hence, showing that if $f(n) ∈ o(g(n))$, then $f(n) ∈ O(g(n))$, with $C = 1$ and the  n<sub>0</sub> given by the definition of little-o.
 
